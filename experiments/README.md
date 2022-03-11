@@ -101,9 +101,7 @@ Each directory contains the training and prediction scripts.
 
 We also release the model checkpoints and their outputs at:
 
-- https://www.dropbox.com/sh/ib82idkn45y7n1y/AAAh26F-JiLGFP89bO6hKzuza/experiments?lst=
-
-These model checkpoints and outputs incorporate the data from the FEVER shared task, and are released under the terms of the license specified on the FEVER website, under the [Creative Commons Attribution-ShareAlike License (version 3.0)](https://creativecommons.org/licenses/by-sa/3.0/).
+- https://doi.org/10.5281/zenodo.6344550
 
 In the following, we show how to use the model checkpoint of `claim-verification-roberta-large`.
 
@@ -112,9 +110,11 @@ In the following, we show how to use the model checkpoint of `claim-verification
 First, we need to download the predicted evidence sentences for the training/dev/test sets:
 
 ```bash
+cd mla/experiments/
+wget https://zenodo.org/record/6344550/files/sentence-selection.tgz
+tar xvf sentence-selection.tgz
 cd sentence-selection
-wget https://www.dropbox.com/sh/ib82idkn45y7n1y/AADkCkF8zdKdpRFU1CHRxGRia/experiments/sentence-selection/bert-base-uncased-128-out.tgz
-tar xvfz bert-base-uncased-128-out.tgz
+tar xvf bert-base-uncased-128-out.tgz
 wc -l bert-base-uncased-128-out/*.jsonl
    19998 bert-base-uncased-128-out/shared_task_dev.jsonl
    19998 bert-base-uncased-128-out/shared_task_test.jsonl
@@ -126,9 +126,10 @@ cd ..
 Then, we download the model checkpoint:
 
 ```bash
+wget https://zenodo.org/record/6344550/files/claim-verification-roberta-large.tgz
+tar xvf claim-verification-roberta-large.tgz
 cd claim-verification-roberta-large
-wget https://www.dropbox.com/sh/ib82idkn45y7n1y/AADmOscjpwuHlk8I8lSR-z8-a/experiments/claim-verification-roberta-large/roberta-large-128-mod.tgz
-tar xvfz roberta-large-128-mod.tgz
+tar xvf roberta-large-128-mod.tgz
 ```
 
 The epoch index starts from 0 not 1.
