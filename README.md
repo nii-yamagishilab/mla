@@ -9,7 +9,7 @@ If you find our code and/or models useful, please cite our paper:
     author = "Canasai Kruengkrai and Junichi Yamagishi and Xin Wang",
     booktitle = "In Proceedings of Findings of the Association for Computational Linguistics: ACL 2021",
     year = "2021",
-    url = "https://arxiv.org/abs/2106.00950",
+    url = "https://aclanthology.org/2021.findings-acl.217",
 }
 ```
 
