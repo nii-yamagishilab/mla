@@ -1,15 +1,18 @@
 # MLA
 
-This is an implementation of our paper: [A Multi-Level Attention Model for Evidence-Based Fact Checking](https://arxiv.org/abs/2106.00950).
-If you find our code and/or models useful, please cite our paper:
+This is an implementation of our paper: [A Multi-Level Attention Model for Evidence-Based Fact Checking](https://aclanthology.org/2021.findings-acl.217/).
+If you find our code and/or models useful, please cite:
 
 ```bash
-@inproceedings{Kruengkrai2021,
+@inproceedings{kruengkrai-etal-2021-multi,
     title = "A Multi-Level Attention Model for Evidence-Based Fact Checking",
-    author = "Canasai Kruengkrai and Junichi Yamagishi and Xin Wang",
-    booktitle = "In Proceedings of Findings of the Association for Computational Linguistics: ACL 2021",
+    author = "Kruengkrai, Canasai and Yamagishi, Junichi and Wang, Xin",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
     year = "2021",
+    publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2021.findings-acl.217",
+    doi = "10.18653/v1/2021.findings-acl.217",
+    pages = "2447--2460",
 }
 ```
 
